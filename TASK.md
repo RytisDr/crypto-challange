@@ -18,9 +18,9 @@ Create a simplified cryptocurrency price tracker using Next.js 16+ (App Router),
 
 ## 💡 Evaluation Focus
 
-* Error handling (API rate limits)
-* Hydration handling (`localStorage` in Next.js)
-* TypeScript types (avoid `any`)
+- Error handling (API rate limits)
+- Hydration handling (`localStorage` in Next.js)
+- TypeScript types (avoid `any`)
 
 ## 📤 Submission
 
