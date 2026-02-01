@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navigation } from "@/components/Navigation";
+import { FavoritesProvider } from "@/components/FavoritesProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--background)]`}
       >
         <Navigation />
-        {children}
+        <FavoritesProvider>{children}</FavoritesProvider>
       </body>
     </html>
   );

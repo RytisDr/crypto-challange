@@ -20,22 +20,22 @@ export default async function Home() {
   }
 
   return (
-    <main className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-neutral-50 to-neutral-100 py-12 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-[var(--background)] to-[var(--background)] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-2">
+          <h1 className="text-4xl font-bold text-[var(--foreground)] mb-2">
             Price Tracker
           </h1>
-          <p className="text-neutral-600">
+          <p className="text-[var(--muted-foreground)]">
             Track the top 10 cryptocurrencies in real-time.
           </p>
         </div>
         {error && (
-          <div className="mb-8 rounded-lg border border-red-200 bg-red-50 p-4">
-            <p className="text-sm text-red-800">
+          <div className="mb-8 rounded-lg border border-[var(--border)] bg-[var(--background)] p-4">
+            <p className="text-sm text-[var(--destructive)]">
               <strong>Error:</strong> {error}
             </p>
-            <p className="text-xs text-red-700 mt-1">
+            <p className="text-xs text-[var(--destructive)] mt-1">
               Please try again later or check your internet connection.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default async function Home() {
         ) : (
           !error && (
             <div className="text-center">
-              <p className="text-neutral-600">Loading...</p>
+              <p className="text-[var(--muted-foreground)]">Loading...</p>
             </div>
           )
         )}

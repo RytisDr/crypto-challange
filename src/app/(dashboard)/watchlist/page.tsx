@@ -7,21 +7,21 @@ export const metadata: Metadata = {
 
 export default function WatchlistPage() {
   return (
-    <main className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-neutral-50 to-neutral-100 py-12 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-[var(--background)] to-[var(--background)] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-2">
+          <h1 className="text-4xl font-bold text-[var(--foreground)] mb-2">
             Watchlist
           </h1>
-          <p className="text-neutral-600">
-            Your favorite cryptocurrencies saved for quick access
+          <p className="text-[var(--muted-foreground)]">
+            Your favorite cryptocurrencies.
           </p>
         </div>
-        <div className="rounded-lg border border-neutral-200 bg-white p-8 text-center">
-          <p className="text-neutral-600 mb-4">
+        <div className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-8 text-center">
+          <p className="text-[var(--muted-foreground)] mb-4">
             No coins in your watchlist yet.
           </p>
-          <p className="text-sm text-neutral-500">
+          <p className="text-sm text-[var(--muted-foreground)]">
             Star your favorite coins from the Price Tracker to add them here.
           </p>
         </div>

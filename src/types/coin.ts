@@ -1,4 +1,4 @@
-export interface Coin {
+export type Coin = {
   id: string;
   symbol: string;
   name: string;
@@ -7,4 +7,4 @@ export interface Coin {
   price_change_percentage_24h: number;
   market_cap: number;
   market_cap_rank: number;
-}
+};
