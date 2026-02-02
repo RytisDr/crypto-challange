@@ -84,9 +84,7 @@ export default async function CoinPage({ params }: { params: any }) {
 
   const marketCap = coin.market_data?.market_cap?.usd;
   const price = coin.market_data?.current_price?.usd;
-  const description =
-    coin.description?.en?.replace(/<[^>]*>/g, "").slice(0, 500) ||
-    "No description available";
+  const description = coin.description?.en || "No description available";
 
   return (
     <main className="bg-gradient-to-br from-[var(--background)] to-[var(--background)] py-12 px-4 sm:px-6 lg:px-8">
