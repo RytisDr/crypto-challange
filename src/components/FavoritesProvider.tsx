@@ -1,6 +1,5 @@
 "use client";
 
-import { FavoritesContextValue } from "@/types/favoritesContext";
 import {
   createContext,
   useCallback,
@@ -11,6 +10,13 @@ import {
 import type { ReactNode } from "react";
 
 const KEY = "crypto_quick_favorites";
+
+type FavoritesContextValue = {
+  favorites: string[];
+  isHydrated: boolean;
+  isFavorite: (id: string) => boolean;
+  toggle: (id: string) => void;
+};
 
 const FavoritesContext = createContext<FavoritesContextValue | undefined>(
   undefined,

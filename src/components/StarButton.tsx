@@ -1,3 +1,5 @@
+"use client";
+
 import { useFavoritesContext as useFavorites } from "@/components/FavoritesProvider";
 import { Coin } from "@/types/coin";
 import { Star } from "lucide-react";

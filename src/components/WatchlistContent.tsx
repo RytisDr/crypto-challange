@@ -5,10 +5,10 @@ import { useFavoritesContext } from "@/components/FavoritesProvider";
 import { CoinList } from "@/components/CoinList";
 import { Coin } from "@/types/coin";
 
-interface WatchlistContentProps {
+type WatchlistContentProps = {
   coins: Coin[];
   error?: string | null;
-}
+};
 
 export function WatchlistContent({ coins, error }: WatchlistContentProps) {
   const { favorites, isHydrated } = useFavoritesContext();
